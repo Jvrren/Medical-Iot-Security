@@ -1,7 +1,11 @@
 import "./css/style.css";
-
+import { gsap } from "gsap";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { TextPlugin } from "gsap/TextPlugin";
+
+
+gsap.registerPlugin(TextPlugin);
 
 import Header from "@/components/ui/header";
 
